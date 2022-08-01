@@ -37,22 +37,22 @@ async def test_seq_bug1(dut):
     await FallingEdge(dut.clk)
     dut._log.info(f"curr_state={dut.current_state.value}")
     dut._log.info(f"next_state={dut.next_state.value}")
-    dut.current_state.value==dut.SEQ_1.value
-    if dut.next_state !=dut.SEQ_10.value:
-        print("failure at seq_1")
+    dut.current_state.value==dut.SEQ_10.value
+    if dut.next_state !=dut.IDLE.value:
+        print("failure at seq_10")
     
     dut.inp_bit.value=1
     await FallingEdge(dut.clk)
     dut._log.info(f"curr_state={dut.current_state.value}")
     dut._log.info(f"next_state={dut.next_state.value}")
-    dut.current_state.value==dut.SEQ_10.value
-    if dut.next_state !=dut.SEQ_101.value:
-        print("failure at seq_10")
+    dut.current_state.value==dut.SEQ_101.value
+    if dut.next_state !=dut.SEQ_1011.value:
+        print("failure at seq_101")
     
-    dut.inp_bit.value=0
+    dut.inp_bit.value=1
     await FallingEdge(dut.clk)
     dut._log.info(f"curr_state={dut.current_state.value}")
     dut._log.info(f"next_state={dut.next_state.value}")
-    dut.current_state.value==dut.SEQ_10.value
-    if dut.next_state !=dut.IDLE.value:
-        print("failure at seq_10")
+    dut.current_state.value==dut.SEQ_1011.value
+    if dut.next_state !=dut.SEQ_1.value:
+        print("failure at seq_1011")
