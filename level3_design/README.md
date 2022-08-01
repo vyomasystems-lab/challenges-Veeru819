@@ -1,8 +1,10 @@
 # Final Report - Veerababu.T (Veeru819)
 ## Level3 Design - Fulladder using 2 half adders
 
-In the given verilog code actually Carry expression in a&b but i gave the bug a+b.
+In the given verilog code actual Carry expression is a&b but i gave the bug a+b.
 So there is a chance to get error for carry of full adder.
+I have uploaded here verilog code without bug and with bug and also verification photos.
+
 
 
 ![File_with_bug](https://user-images.githubusercontent.com/109529642/182213254-8e716550-e233-4c4b-ae8d-8ec122e7f223.png)
