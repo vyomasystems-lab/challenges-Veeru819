@@ -7,3 +7,4 @@ So there is a chance to get error for carry of full adder.
 
 ![File_with_bug](https://user-images.githubusercontent.com/109529642/182213254-8e716550-e233-4c4b-ae8d-8ec122e7f223.png)
 ![File_withoutbug](https://user-images.githubusercontent.com/109529642/182213270-4cca9762-05ed-4f6c-8208-971c7f05b321.png)
+![Error](https://user-images.githubusercontent.com/109529642/182218392-58cb698c-c625-4c64-8914-9440bb75d845.png)
